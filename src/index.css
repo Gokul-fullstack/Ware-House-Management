@@ -537,11 +537,11 @@ img {
 .table th {
   padding: 12px 16px;
   text-align: left;
-  font-weight: 600;
-  font-size: 0.75rem;
+  font-weight: 700; /* Bold headers */
+  font-size: 0.82rem; /* Larger headers */
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-secondary);
+  color: #ffffff; /* White text on dark header bg */
   background: rgba(15, 23, 42, 0.95);
   border-bottom: 1px solid var(--border-primary);
   white-space: nowrap;
@@ -1298,11 +1298,11 @@ img {
   padding: 10px 12px;
   background: rgba(15, 23, 42, 0.95);
   border-bottom: 1px solid var(--border-primary);
-  font-weight: 600;
-  font-size: 0.72rem;
+  font-weight: 700; /* Bold headers */
+  font-size: 0.8rem; /* Larger headers */
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-secondary);
+  color: #ffffff; /* White text on dark header bg */
   text-align: left;
   position: sticky;
   top: 0;
