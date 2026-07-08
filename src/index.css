@@ -375,8 +375,8 @@ img {
   gap: 6px;
 }
 .input-group label {
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.88rem; /* Larger label font size */
+  font-weight: 700; /* Bold label headings */
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -781,11 +781,11 @@ img {
 
 .sidebar-section-label {
   padding: 12px 12px 6px;
-  font-size: 0.65rem;
-  font-weight: 600;
+  font-size: 0.78rem; /* Larger sidebar category titles */
+  font-weight: 700; /* Bolder category headers */
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-muted);
+  color: var(--text-secondary); /* Darker color for visibility */
   white-space: nowrap;
   overflow: hidden;
 }

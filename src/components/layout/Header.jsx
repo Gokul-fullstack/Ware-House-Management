@@ -68,9 +68,9 @@ export default function Header() {
   const ss = String(time.getSeconds()).padStart(2, '0');
 
   return (
-    <header className="header" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', height: 64, borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-bg-dark)' }}>
+    <header className="header" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', height: 64, borderBottom: '1px solid var(--border-primary)', backgroundColor: 'var(--bg-header)' }}>
       <div className="header-left">
-        <h2 style={{ fontSize: 18, fontWeight: 600, color: '#fff', margin: 0 }}>{title}</h2>
+        <h2 style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>{title}</h2>
       </div>
       
       <div className="header-right" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
@@ -79,7 +79,7 @@ export default function Header() {
           onClick={() => setShowHelp(true)} 
           style={{ 
             background: 'none', 
-            color: 'var(--color-text-muted)', 
+            color: 'var(--text-secondary)', 
             cursor: 'pointer', 
             display: 'flex', 
             alignItems: 'center', 
@@ -91,12 +91,12 @@ export default function Header() {
             border: '1px solid transparent'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.color = '#fff';
-            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)';
-            e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.02)';
+            e.currentTarget.style.color = 'var(--text-primary)';
+            e.currentTarget.style.borderColor = 'var(--border-primary)';
+            e.currentTarget.style.backgroundColor = 'var(--bg-secondary)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.color = 'var(--color-text-muted)';
+            e.currentTarget.style.color = 'var(--text-secondary)';
             e.currentTarget.style.borderColor = 'transparent';
             e.currentTarget.style.backgroundColor = 'transparent';
           }}
@@ -105,7 +105,7 @@ export default function Header() {
           <span>F1 Help</span>
         </button>
 
-        <div className="header-time" style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--color-text-muted)' }}>
+        <div className="header-time" style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--text-secondary)' }}>
           <Clock size={14} />
           <span>{dd}/{mm}/{yyyy} {hh}:{min}:{ss}</span>
         </div>
