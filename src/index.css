@@ -23,9 +23,9 @@
   --border-subtle: #F1F5F9; /* Slate-100 */
 
   /* Text */
-  --text-primary: #0F172A; /* Slate-900: deep dark gray/slate */
-  --text-secondary: #475569; /* Slate-600 */
-  --text-muted: #64748B; /* Slate-500 */
+  --text-primary: #090D1F; /* Very deep dark navy for maximum readability */
+  --text-secondary: #2C3E50; /* Strong dark slate */
+  --text-muted: #566573; /* Clearly visible medium gray/slate */
   --text-inverse: #FFFFFF; /* White text for dark contexts (e.g. tooltips) */
 
   /* Accent Colors */
@@ -89,7 +89,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 14.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -100,6 +100,7 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   line-height: 1.6;
+  font-weight: 500; /* Thicker weight so text is extremely crisp and visible */
   min-height: 100vh;
   overflow-x: hidden;
 }
