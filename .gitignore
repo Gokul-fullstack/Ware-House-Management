@@ -1,0 +1,37 @@
+﻿# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+release/
+build/
+
+# SQLite databases
+data/*.sqlite
+data/*.sqlite-shm
+data/*.sqlite-wal
+data/*_BACKUP_*.sqlite
+data/*_BK*.sqlite
+*.sqlite
+
+# Environment & secrets
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Electron build
+release/
