@@ -1395,12 +1395,12 @@ img {
   font-size: 0.85rem;
 }
 .billing-summary-row .label {
-  color: var(--text-secondary);
+  color: inherit;
 }
 .billing-summary-row .value {
   font-family: var(--font-mono);
-  color: var(--text-primary);
-  font-weight: 500;
+  color: inherit;
+  font-weight: 700;
 }
 .billing-summary-row.total {
   padding-top: 10px;
@@ -1410,12 +1410,12 @@ img {
 .billing-summary-row.total .label {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: inherit;
 }
 .billing-summary-row.total .value {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--accent-green);
+  color: inherit;
 }
 .billing-amount-words {
   font-size: 0.75rem;
