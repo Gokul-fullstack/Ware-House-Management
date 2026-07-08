@@ -977,7 +977,7 @@ export default function SalesBillingPage() {
                         value={row.selected_unit === 'bulk' ? (row.bulk_unit_name || 'Box') : (row.unit_name || 'Pcs')}
                         readOnly
                         onKeyDown={e => {
-                          if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+                          if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Enter') {
                             e.preventDefault();
                             
                             const baseU = row.unit_name || 'Pcs';
@@ -993,7 +993,7 @@ export default function SalesBillingPage() {
                             if (e.key === 'ArrowUp') {
                               nextOptIdx = (optIdx - 1 + options.length) % options.length;
                             } else {
-                              nextOptIdx = (optIdx + 1) % options.length;
+                              nextOptIdx = (optIdx + 1) % options.length; // Enter and ArrowDown toggle to next option
                             }
                             const nextVal = options[nextOptIdx];
                             
