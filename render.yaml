@@ -2,15 +2,9 @@
   - type: web
     name: arun-traders-billing
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm install && npm run build
     startCommand: node electron/server.js
     envVars:
       - key: NODE_ENV
         value: production
-      - key: DATABASE_PATH
-        value: /opt/render/project/data/aruntraders.sqlite
-    disk:
-      name: billing-data
-      mountPath: /opt/render/project/data
-      sizeGB: 1
